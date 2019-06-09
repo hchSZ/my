@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // forEach map filter every some
+        // 数组.方法(function(item, index) {})
+        var arr = [11, 12, 22, 39, 54, 13]
+        // 1. forEach  $.each() i, item
+        // arr.forEach((item, index) => {
+        //     console.log(item, index, 1111)
+        // })
+        // 2. map映射 一一对应
+        // var arrMap = arr.map((item, index) => {
+        //     // return 映射条件
+        //     return item * 2
+        // })
+        // console.log(arrMap)
+
+        // 3. filter过滤
+        // var arrFilter = arr.filter(item => {
+        //     // return 一个过滤条件
+        //     return item > 20
+        // })
+        // console.log(arrFilter)
+
+        // 4. every 就是每一项的条件都满足就返回true
+        var flag1 = arr.every(item => {
+            return item > 30
+        })
+        console.log(flag1)
+        // 5. some 只有一项满足就返回true
+        var flag2 = arr.some(item => {
+            return item > 30
+        })
+        console.log(flag2)
+
+        // forEach类似for 没有return  其他的数组操作方法都有return 条件
+    </script>
+</body>
+
+</html>
